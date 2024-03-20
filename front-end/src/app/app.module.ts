@@ -11,18 +11,27 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {RouterLink, RouterOutlet} from "@angular/router";
 import {MatDividerModule} from "@angular/material/divider";
-import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {AppRoutingModule} from "./app-routing.module";
+import {CommonModule} from "@angular/common";
+import {HomeComponent} from "./components/home/home.component";
+import { ContactComponent } from './components/contact/contact.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
+    ContactComponent,
+    PortfolioComponent,
+    NavbarComponent,
+    NavbarComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
@@ -35,7 +44,7 @@ import {AppRoutingModule} from "./app-routing.module";
     MatDividerModule,
     RouterLink,
     MatDatepickerModule,
-    AppRoutingModule
+    AppRoutingModule,
 
   ],
   providers: [],

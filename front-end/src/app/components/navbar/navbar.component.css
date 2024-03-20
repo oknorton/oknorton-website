@@ -1,0 +1,15 @@
+.p-6 {
+  padding: 24px;
+  transition: padding 0.3s ease-in-out;
+}
+
+
+.rounded {
+  border-radius: 30px;
+  transition: border-radius 0.3s ease-in-out;
+
+}
+
+.p-6, .rounded {
+  transition: all 0.3s ease;
+}
