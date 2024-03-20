@@ -1,16 +1,3 @@
-@keyframes gradient-anim {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-.animate-gradient-x {
-  background: linear-gradient(270deg, #743ad5, #d53a9d);
-  background-size: 200% 200%;
-  animation: gradient-anim 15s ease infinite;
+.orange-alt {
+  background: #ec8536;
 }

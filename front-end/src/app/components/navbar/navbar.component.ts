@@ -1,4 +1,5 @@
 import { Component, HostListener, ElementRef, ViewChild } from '@angular/core';
+import {ScrollService} from "../../Services/scroll.service";
 
 @Component({
   selector: 'app-navbar',
@@ -6,11 +7,18 @@ import { Component, HostListener, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  constructor(private scrollService: ScrollService) { }
+
   private readonly PADDING_CLASS = 'p-6';
   private readonly CORNER_CLASS  = 'rounded';
 
   @ViewChild('navbar') navbarRef!: ElementRef;
   @ViewChild('corner') cornerRef!: ElementRef;
+
+  scrollToElement(id: string): void {
+    this.scrollService.scrollToElement(id);
+  }
+
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
@@ -21,6 +29,7 @@ export class NavbarComponent {
       this.togglePadding(false);
       this.toggleRoundedCorners(false);
     }
+
   }
 
   private togglePadding(addPadding: boolean): void {
