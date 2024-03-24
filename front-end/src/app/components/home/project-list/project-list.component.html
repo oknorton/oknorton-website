@@ -1,0 +1,17 @@
+<div class="carousel carousel-center p-4 space-x-3 bg-neutral w-full">
+  <div *ngFor="let project of projects" class="carousel-item w-80">
+    <div class="card w-96 bg-base-100 shadow-xl">
+      <figure>
+        <img src="{{project.imageURL}}" class="object-cover object-center w-80 min-h-32 max-h-52" alt="Project Image" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">{{ project.title }}</h2>
+        <p>{{ project.description }}</p>
+        <p class="text-gray-600">{{ project.date | date: 'longDate' }}</p>
+        <div class="card-actions justify-end">
+          <div *ngFor="let tag of project.projectTags" class="badge badge-outline">{{tag.tag.name}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

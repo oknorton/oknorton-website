@@ -1,0 +1,11 @@
+.social-icon:hover {
+  transform: scale(1.2);
+  background-color: rgba(240, 248, 255, 0.02);
+  border-radius: 8px;
+
+  transition: all 0.1s ease-in-out;
+}
+.social-icon:active {
+  transform: scale(0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+}

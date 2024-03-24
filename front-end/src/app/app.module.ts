@@ -11,24 +11,29 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {RouterLink, RouterOutlet} from "@angular/router";
 import {MatDividerModule} from "@angular/material/divider";
-import { AboutComponent } from './components/about/about.component';
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {AppRoutingModule} from "./app-routing.module";
 import {CommonModule} from "@angular/common";
 import {HomeComponent} from "./components/home/home.component";
-import { ContactComponent } from './components/contact/contact.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-
+import { AboutMeComponent } from './components/home/about-me/about-me.component';
+import { SocialIconsComponent } from './components/home/about-me/social-icons/social-icons.component';
+import { SvgCarouselComponent } from './components/home/svg-carousel/svg-carousel.component';
+import { ProjectListComponent } from './components/home/project-list/project-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { GithubComponent } from './components/github/github.component';
+import {FormsModule} from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
-    ContactComponent,
-    PortfolioComponent,
     NavbarComponent,
     NavbarComponent,
+    AboutMeComponent,
+    SocialIconsComponent,
+    SvgCarouselComponent,
+    ProjectListComponent,
+    GithubComponent,
   ],
   imports: [
     CommonModule,
@@ -45,6 +50,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     RouterLink,
     MatDatepickerModule,
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule
 
   ],
   providers: [],

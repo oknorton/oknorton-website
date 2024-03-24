@@ -12,6 +12,7 @@ export class HomeComponent implements AfterViewInit {
   @ViewChild('home') homeRef!: ElementRef;
   @ViewChild('about') aboutMeRef!: ElementRef;
   @ViewChild('project') projectRef!: ElementRef;
+  @ViewChild('github') githubRef!: ElementRef;
   @ViewChild('experience') experienceRef!: ElementRef;
   @ViewChild('contact') contactRef!: ElementRef;
   constructor(private elementRef: ElementRef, private scrollService: ScrollService) {}
@@ -22,6 +23,7 @@ export class HomeComponent implements AfterViewInit {
     this.scrollService.setElement('project', this.projectRef.nativeElement);
     this.scrollService.setElement('experience', this.experienceRef.nativeElement);
     this.scrollService.setElement('contact', this.contactRef.nativeElement);
+    this.scrollService.setElement('github', this.githubRef.nativeElement);
 
     const targetElement = this.elementRef.nativeElement.querySelector('.typewriter');
 

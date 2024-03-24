@@ -1,0 +1,59 @@
+<div *ngIf="githubUser" class=" ">
+  <div class="container mx-auto">
+
+    <div class="grid grid-cols-2 gap-6">
+      <div class="card bg-gray-800 shadow-xl">
+        <div class="card-body  ">
+          <img class="w-32 h-32 rounded-full mx-auto" src="{{ githubUser.avatar_url }}" alt="Avatar">
+          <h1 class="text-xl font-bold text-center mt-4">{{ githubUser.name }}</h1>
+          <p class="text-center text-gray-600">{{ githubUser.login }}</p>
+          <p class="text-center">{{ githubUser.bio }}</p>
+
+
+          <div  class="card-actions justify-center">
+            <a href="{{ githubUser.html_url }}">
+              <button  class="btn btn-gray">Visit Profile</button>
+
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex flex-row space-x-8">
+          <div class="card bg-gray-800 shadow-xl w-full">
+            <div class="card-body  ">
+              <h2 class="text-lg font-semibold">Basic Info</h2>
+              <ul class="mt-2">
+                <li><strong>Location:</strong> {{ githubUser.location }}</li>
+                <li><strong>Company:</strong> {{ githubUser.company }}</li>
+                <li><strong>Employment:</strong> <span *ngIf="githubUser.hireable"> Hireable </span> <span *ngIf="!githubUser.hireable"> Employed </span>  </li>
+                <li><strong>Website:</strong> {{ githubUser.blog }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card bg-gray-800 shadow-xl w-full">
+            <div class="card-body  ">
+              <h2 class="text-lg font-semibold mt-4">Stats</h2>
+              <ul class="mt-2">
+                <li><strong>Followers:</strong> {{ githubUser.followers }}</li>
+                <li><strong>Following:</strong> {{ githubUser.following }}</li>
+                <li><strong>Public Repos:</strong> {{ githubUser.public_repos }}</li>
+                <li><strong>Public Gists:</strong> {{ githubUser.public_gists }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-gray-800 shadow-xl mt-8">
+          <div class="card-body  ">
+            <div class="">
+              <h2 class="text-lg font-semibold">Contributions</h2>
+              <img class="mt-4" src="https://ghchart.rshah.org/eb0e73/{{githubUser.login}}" alt="Contributions chart">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
