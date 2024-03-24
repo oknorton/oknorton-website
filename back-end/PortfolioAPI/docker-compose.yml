@@ -1,0 +1,19 @@
+﻿services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server
+    ports:
+      - "1433:1433"
+    environment:
+      MSSQL_SA_PASSWORD: "PortfolioAPIPassword123!" 
+      ACCEPT_EULA: "Y"
+    volumes:
+      - mssql-data:/var/opt/mssql
+    networks:
+      - mssqlnet
+
+volumes:
+  mssql-data:
+
+networks:
+  mssqlnet:
+    driver: bridge
