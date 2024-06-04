@@ -57,7 +57,16 @@ namespace PortfolioAPI.Controllers;
                 return BadRequest();
             }
 
-            _context.Entry(project).State = EntityState.Modified;
+            var existingProject = await _context.Projects.FindAsync(id);
+
+            if (existingProject == null)
+            {
+                return NotFound();
+            }
+
+            existingProject.Title = project.Title;
+            existingProject.Description = project.Description;
+            existingProject.ImageURL = project.ImageURL;
 
             try
             {
@@ -77,6 +86,7 @@ namespace PortfolioAPI.Controllers;
 
             return NoContent();
         }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProject(int id)
