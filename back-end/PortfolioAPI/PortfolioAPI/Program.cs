@@ -1,12 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using PortfolioAPI;
 using Microsoft.Extensions.DependencyInjection;
-//Author: Oliver Norton
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddHttpClient<GithubService>(); 
 
+// Add services to the container
+builder.Services.AddHttpClient<GithubService>(); 
 builder.Services.AddScoped<GithubService>();
 builder.Services.AddCors();
 
@@ -19,8 +19,10 @@ builder.Services.AddControllers()
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<PortfolioDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("PortfolioDatabase")));
+// Configure DbContext for the application
+// builder.Services.AddDbContext<PortfolioDbContext>(options =>
+//     options.UseSqlServer(builder.Configuration.GetConnectionString("PortfolioDatabase")));
+builder.Services.AddSingleton<PortfolioDbContext>(s=> new PortfolioDbContext(builder.Configuration));  
 
 var app = builder.Build();
 
@@ -39,19 +41,16 @@ var app = builder.Build();
 //     }
 // }
 
-
-
 app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+// }
 
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();
 app.MapControllers();
-
 app.Run();

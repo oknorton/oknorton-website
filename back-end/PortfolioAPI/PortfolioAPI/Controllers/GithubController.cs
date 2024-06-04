@@ -16,12 +16,12 @@ public class GithubController : ControllerBase
     }
 
     [HttpGet("{username}")]
-    public async Task<ActionResult<int>> GetContributionsCount(string username)
+    public async Task<ActionResult<int>> GetUserData(string username)
     {
         try
         {
-            var contributionsCount = await _gitHubService.GetGithubUserData(username);
-            return Ok(contributionsCount);
+            var userdata = await _gitHubService.GetGithubUserData(username);
+            return Ok(userdata);
         }
         catch (HttpRequestException)
         {

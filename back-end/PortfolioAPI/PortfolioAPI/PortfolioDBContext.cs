@@ -13,10 +13,19 @@ public class PortfolioDbContext : DbContext
     {
         _configuration = configuration;
     }
+
+    // Constructor for use with DbContextOptions
+    public PortfolioDbContext(DbContextOptions<PortfolioDbContext> options) : base(options)
+    {
+    }
     
+   
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer(_configuration.GetConnectionString("PortfolioDatabase"));
+        if (_configuration != null)
+        {
+            optionsBuilder.UseSqlServer(_configuration.GetConnectionString("PortfolioDatabase"));
+        }
     }
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -40,6 +40,7 @@ namespace PortfolioAPI.Controllers;
             return project;
         }
 
+
         [HttpPost]
         public async Task<ActionResult<Project>> PostProject(Project project)
         {
@@ -57,7 +58,16 @@ namespace PortfolioAPI.Controllers;
                 return BadRequest();
             }
 
-            _context.Entry(project).State = EntityState.Modified;
+            var existingProject = await _context.Projects.FindAsync(id);
+
+            if (existingProject == null)
+            {
+                return NotFound();
+            }
+
+            existingProject.Title = project.Title;
+            existingProject.Description = project.Description;
+            existingProject.ImageURL = project.ImageURL;
 
             try
             {
@@ -69,15 +79,19 @@ namespace PortfolioAPI.Controllers;
                 {
                     return NotFound();
                 }
-                else
-                {
-                    throw;
-                }
+
+                throw;
             }
 
             return NoContent();
         }
 
+        private bool ProjectExists(int id)
+        {
+            return _context.Projects.Any(e => e.Id == id);
+        }
+        
+        
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProject(int id)
         {
@@ -93,8 +107,5 @@ namespace PortfolioAPI.Controllers;
             return NoContent();
         }
 
-        private bool ProjectExists(int id)
-        {
-            return _context.Projects.Any(e => e.Id == id);
-        }
+        
     }
