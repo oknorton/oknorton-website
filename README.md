@@ -25,8 +25,8 @@ Deze applicatie is bedoeld om een portfolio van projecten te presenteren. Het be
 
 ## Auteur
 
-- Naam: [Jouw Naam]
+- Naam: Oliver Norton
 
 ## Opmerkingen
 
-Dit project is gemaakt als onderdeel van een opdracht. Zie de bronnen en opmerkingen in de bronbestanden voor meer informatie.
+Dit project is gemaakt als onderdeel van een opdracht voor Cloud Native Development.
