@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+//Author: Oliver Norton
 
 namespace PortfolioAPI.Models;
 

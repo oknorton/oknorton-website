@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
+//Author: Oliver Norton
 
 namespace PortfolioAPI.Models
 {

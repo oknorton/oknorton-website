@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace PortfolioAPI.Models;
-
+//Author: Oliver Norton
 public class Project
 {
     [Key]

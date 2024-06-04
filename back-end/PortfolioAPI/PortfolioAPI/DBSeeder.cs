@@ -2,6 +2,7 @@
 using PortfolioAPI.Models;
 using System;
 using System.Collections.Generic;
+//Author: Oliver Norton
 
 namespace PortfolioAPI
 {
