@@ -9,7 +9,7 @@ import {Project} from "../Models/project";
 })
 export class GithubService {
   private baseUrl = 'https://api.github.com/';
-  private apiURL = 'https://localhost:7154/Github';
+  private apiURL = 'http://localhost:5000/Github';
 
   constructor(private http: HttpClient) { }
 
