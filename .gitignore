@@ -177,3 +177,5 @@ dist
 back-end/PortfolioAPI/PortfolioAPI/bin/
 
 back-end/PortfolioAPI/PortfolioAPI/obj/
+
+back-end/PortfolioAPI/PortfolioAPI.Tests/obj/
