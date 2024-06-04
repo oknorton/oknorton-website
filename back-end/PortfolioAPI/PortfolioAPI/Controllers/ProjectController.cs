@@ -79,16 +79,19 @@ namespace PortfolioAPI.Controllers;
                 {
                     return NotFound();
                 }
-                else
-                {
-                    throw;
-                }
+
+                throw;
             }
 
             return NoContent();
         }
 
-
+        private bool ProjectExists(int id)
+        {
+            return _context.Projects.Any(e => e.Id == id);
+        }
+        
+        
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProject(int id)
         {
@@ -104,8 +107,5 @@ namespace PortfolioAPI.Controllers;
             return NoContent();
         }
 
-        private bool ProjectExists(int id)
-        {
-            return _context.Projects.Any(e => e.Id == id);
-        }
+        
     }
