@@ -20,7 +20,7 @@ jobs:
           dotnet-version: 7.0.203
 
       - name: Restore dependencies
-        run: dotnet restore back-end/PortfolioAPI/PortfolioAPI/PortfolioAPI.csproj
+        run: dotnet restore back-end/PortfolioAPI/PortfolioAPI/PortfolioAPI.csproj back-end/PortfolioAPI/PortfolioAPI.Tests/PortfolioAPI.Tests.csproj
 
       - name: Build API
         run: dotnet build --configuration Release --no-restore back-end/PortfolioAPI/PortfolioAPI/PortfolioAPI.csproj

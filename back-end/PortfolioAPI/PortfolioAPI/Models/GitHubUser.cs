@@ -1,7 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using System.Text.Json.Serialization;
 //Author: Oliver Norton
+// ReSharper disable PropertyCanBeMadeInitOnly.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+//IDK WHY THIS WORKS OR HOW THIS WORKS OR WHOEVER BLESSED THIS TO WORK BUT IN GODS NAME DO NOT DARE TO TOUCH THIS CODE OR THE COMPILER WILL SMITE YOU WITH A MILLION ERRORS
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 
 namespace PortfolioAPI.Models
 {
