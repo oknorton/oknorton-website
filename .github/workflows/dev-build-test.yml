@@ -2,9 +2,9 @@
 
 on:
   push:
-    branches: [ "dev" ]
+    branches: [ "Development" ]
   pull_request:
-    branches: [ "dev" ]
+    branches: [ "Development" ]
 
 jobs:
   build_test_push:
