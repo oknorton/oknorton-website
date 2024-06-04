@@ -1,4 +1,4 @@
-﻿name: Build - Test - Push
+name: Build - Test - Push
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
           dotnet-version: 7.0.203
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore back-end/PortfolioAPI/PortfolioAPI/PortfolioAPI.csproj
 
       - name: Build API
         run: dotnet build --configuration Release --no-restore back-end/PortfolioAPI/PortfolioAPI/PortfolioAPI.csproj
@@ -47,4 +47,4 @@ jobs:
         with:
           push: true
           tags: oknorton21/oknorton-website:latest
-          file: ./PortfolioAPI/Dockerfile
+          file: ./back-end/PortfolioAPI/PortfolioAPI/Dockerfile
