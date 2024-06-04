@@ -48,6 +48,7 @@ jobs:
       - name: Docker Build Push
         uses: docker/build-push-action@v5.3.0
         with:
+          context: ./back-end/PortfolioAPI
           push: true
           tags: oknorton21/oknorton-website:latest
           file: ./back-end/PortfolioAPI/PortfolioAPI/Dockerfile
