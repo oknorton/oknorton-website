@@ -11,7 +11,7 @@
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=51e3b2c1_002D0a70_002D4f7e_002D94d0_002D0015f440b171/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetProjects_ReturnsAllProjects #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::EF72BF56-B509-4E95-9F0E-1684EAF1D81F::net6.0::PortfolioAPI.Tests.Controllers.ProjectControllerTest.GetProjects_ReturnsAllProjects&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::EF72BF56-B509-4E95-9F0E-1684EAF1D81F::net6.0::PortfolioAPI.Tests.Controllers.ProjectControllerTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8d5c6a81_002Dfe4e_002D47d8_002Da00d_002D604d9a947a2f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetProjects_ReturnsAllProjects #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;

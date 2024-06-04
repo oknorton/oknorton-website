@@ -163,3 +163,14 @@ E:\CustomProjects\WebDevelopment\oknorton-website\back-end\PortfolioAPI\Portfoli
 E:\CustomProjects\WebDevelopment\oknorton-website\back-end\PortfolioAPI\PortfolioAPI.Tests\bin\Debug\net6.0\Moq.dll
 E:\CustomProjects\WebDevelopment\oknorton-website\back-end\PortfolioAPI\PortfolioAPI.Tests\bin\Debug\net6.0\Moq.EntityFrameworkCore.dll
 E:\CustomProjects\WebDevelopment\oknorton-website\back-end\PortfolioAPI\PortfolioAPI.Tests\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+E:\CustomProjects\WebDevelopment\oknorton-website\back-end\PortfolioAPI\PortfolioAPI.Tests\bin\Debug\net6.0\TechTalk.SpecFlow.xUnit.SpecFlowPlugin.dll
+E:\CustomProjects\WebDevelopment\oknorton-website\back-end\PortfolioAPI\PortfolioAPI.Tests\bin\Debug\net6.0\BoDi.dll
+E:\CustomProjects\WebDevelopment\oknorton-website\back-end\PortfolioAPI\PortfolioAPI.Tests\bin\Debug\net6.0\CucumberExpressions.dll
+E:\CustomProjects\WebDevelopment\oknorton-website\back-end\PortfolioAPI\PortfolioAPI.Tests\bin\Debug\net6.0\Gherkin.dll
+E:\CustomProjects\WebDevelopment\oknorton-website\back-end\PortfolioAPI\PortfolioAPI.Tests\bin\Debug\net6.0\Microsoft.AspNetCore.TestHost.dll
+E:\CustomProjects\WebDevelopment\oknorton-website\back-end\PortfolioAPI\PortfolioAPI.Tests\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+E:\CustomProjects\WebDevelopment\oknorton-website\back-end\PortfolioAPI\PortfolioAPI.Tests\bin\Debug\net6.0\TechTalk.SpecFlow.dll
+E:\CustomProjects\WebDevelopment\oknorton-website\back-end\PortfolioAPI\PortfolioAPI.Tests\bin\Debug\net6.0\SpecFlow.Internal.Json.dll
+E:\CustomProjects\WebDevelopment\oknorton-website\back-end\PortfolioAPI\PortfolioAPI.Tests\bin\Debug\net6.0\System.IO.Pipelines.dll
+E:\CustomProjects\WebDevelopment\oknorton-website\back-end\PortfolioAPI\PortfolioAPI.Tests\bin\Debug\net6.0\Validation.dll
+E:\CustomProjects\WebDevelopment\oknorton-website\back-end\PortfolioAPI\PortfolioAPI.Tests\bin\Debug\net6.0\Xunit.SkippableFact.dll
