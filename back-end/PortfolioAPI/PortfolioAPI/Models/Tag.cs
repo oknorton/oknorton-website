@@ -10,6 +10,4 @@ public class Tag
 
     [Required]
     public string Name { get; set; }
-
-    public ICollection<ProjectTag> ProjectTags { get; set; }
 }

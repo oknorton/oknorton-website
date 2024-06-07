@@ -3,9 +3,7 @@ name: Build - Test
 on:
   push:
     branches: [ "Development" ]
-  pull_request:
-    branches: [ "Development" ]
-
+    
 jobs:
   build_test_push:
     runs-on: ubuntu-latest

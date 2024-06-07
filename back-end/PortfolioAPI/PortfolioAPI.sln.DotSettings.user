@@ -4,12 +4,12 @@
 &lt;/AssemblyExplorer&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=E4D0E55F_002DBCC5_002D48D8_002D9E73_002D4AA5CE0D6DFA/@EntryIndexedValue">PortfolioAPI.Tests</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestTemplateMapping/=xUnit/@EntryIndexedValue">33ff99d8-b1ad-4ed5-a4fd-376b97c2c841</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=29281b6b_002D2df5_002D4a90_002D93a3_002D6c04279e163c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ProjectControllerTest #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=29281b6b_002D2df5_002D4a90_002D93a3_002D6c04279e163c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ProjectControllerTest #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::EF72BF56-B509-4E95-9F0E-1684EAF1D81F::net6.0::PortfolioAPI.Tests.Controllers.ProjectControllerTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=51e3b2c1_002D0a70_002D4f7e_002D94d0_002D0015f440b171/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetProjects_ReturnsAllProjects #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=51e3b2c1_002D0a70_002D4f7e_002D94d0_002D0015f440b171/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetProjects_ReturnsAllProjects #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::EF72BF56-B509-4E95-9F0E-1684EAF1D81F::net6.0::PortfolioAPI.Tests.Controllers.ProjectControllerTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
