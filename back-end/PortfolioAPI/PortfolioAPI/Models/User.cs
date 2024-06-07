@@ -19,5 +19,7 @@ namespace PortfolioAPI.Models
 
         public ICollection<SocialInfo> SocialInfos { get; set; }
         public ICollection<Project> Projects { get; set; }
+        public ICollection<UserInterest> Interests { get; set; }
+
     }
 }

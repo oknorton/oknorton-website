@@ -144,7 +144,16 @@ namespace PortfolioAPI
                                 new ProjectTag { TagId = tags[2].Id }
                             }
                         },
+                    },
+                    Interests = new List<UserInterest>
+                    {
+                        new UserInterest { Description = "Test 1" },
+                        new UserInterest { Description = "Test 2" },
+                        new UserInterest { Description = "Test 3" },
+                        new UserInterest { Description = "Test 4" }
+
                     }
+
                 }
             };
             context.Users.AddRange(users);

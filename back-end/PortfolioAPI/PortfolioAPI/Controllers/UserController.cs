@@ -24,6 +24,7 @@ namespace PortfolioAPI.Controllers
                 .Include(u => u.Projects)
                 .ThenInclude(p => p.ProjectTags)
                 .Include(u => u.SocialInfos)
+                .Include(u => u.Interests)
                 .ToListAsync();
         }
 
@@ -62,7 +63,21 @@ namespace PortfolioAPI.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(user).State = EntityState.Modified;
+            var existingUser = await _context.Users.FindAsync(id);
+            if (existingUser == null)
+            {
+                return NotFound();
+            }
+
+            _context.Entry(existingUser).State = EntityState.Detached;
+
+            existingUser.Name = user.Name;
+            existingUser.CurrentOccupation = user.CurrentOccupation;
+            existingUser.OccupationLocation = user.OccupationLocation;
+            existingUser.Bio = user.Bio;
+            existingUser.ProfilePictureUrl = user.ProfilePictureUrl;
+
+            _context.Entry(existingUser).State = EntityState.Modified;
 
             try
             {
@@ -80,6 +95,7 @@ namespace PortfolioAPI.Controllers
 
             return NoContent();
         }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
