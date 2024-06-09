@@ -16,6 +16,7 @@
     <PackageReference Include="Moq" Version="4.20.70" />
     <PackageReference Include="Moq.EntityFrameworkCore" Version="6.0.1.4" />
     <PackageReference Include="SpecFlow.xUnit" Version="4.0.31-beta" />
+    <PackageReference Include="System.Text.Json" Version="7.0.4" />
     <PackageReference Include="xunit" Version="2.8.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.8.1">
       <PrivateAssets>all</PrivateAssets>

@@ -3,11 +3,11 @@
 
 namespace PortfolioAPI.Models;
 
-public class Tag
+public class UserInterest
 {
     [Key]
     public int Id { get; set; }
 
     [Required]
-    public string Name { get; set; }
+    public string Description { get; set; }
 }

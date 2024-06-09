@@ -25,8 +25,7 @@ public class PortfolioDbContext : DbContext
         if (_configuration != null)
         {
             optionsBuilder.UseSqlServer(_configuration.GetConnectionString("PortfolioDatabase"));
-        }
-    }
+        }    }
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -39,14 +38,32 @@ public class PortfolioDbContext : DbContext
             .HasForeignKey(pt => pt.ProjectId);
 
         modelBuilder.Entity<ProjectTag>()
-            .HasOne(pt => pt.Tag)
-            .WithMany(t => t.ProjectTags)
-            .HasForeignKey(pt => pt.TagId);
+            .HasOne(pt => pt.Tag);
+
+        modelBuilder.Entity<Project>()
+            .HasOne(p => p.User)
+            .WithMany(u => u.Projects)
+            .HasForeignKey(p => p.UserId);
+
+        modelBuilder.Entity<SocialInfo>()
+            .HasOne(si => si.User)
+            .WithMany(u => u.SocialInfos)
+            .HasForeignKey(si => si.UserId);
+
+        modelBuilder.Entity<User>()
+            .HasMany(u => u.Interests);
+        
+        modelBuilder.Entity<UserInterest>()
+            .Property(ui => ui.Description)
+            .IsRequired();
     }
     
     
     public DbSet<Project> Projects { get; set; }
     public DbSet<Tag> Tags { get; set; }
     public DbSet<ProjectTag> ProjectTags { get; set; }
+    public DbSet<User> Users { get; set; }
+    public DbSet<SocialInfo> SocialInfos { get; set; }
+    public DbSet<UserInterest> Interests { get; set; }
 
 }
