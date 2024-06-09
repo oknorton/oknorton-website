@@ -5,9 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using PortfolioAPI.Controllers;
 using PortfolioAPI.Models;
 using Xunit;
-using Xunit.Abstractions;
 
-namespace PortfolioAPI.Tests.Controllers
+namespace PortfolioAPI.Tests.Performance
 {
     public class PerformanceTests
     {

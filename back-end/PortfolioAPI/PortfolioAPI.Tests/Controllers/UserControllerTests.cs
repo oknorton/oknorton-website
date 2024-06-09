@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PortfolioAPI.Models;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using PortfolioAPI.Controllers;
 using Xunit;

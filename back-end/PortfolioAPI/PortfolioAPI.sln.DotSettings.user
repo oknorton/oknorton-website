@@ -5,9 +5,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=E4D0E55F_002DBCC5_002D48D8_002D9E73_002D4AA5CE0D6DFA/@EntryIndexedValue">PortfolioAPI.Tests</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestTemplateMapping/=xUnit/@EntryIndexedValue">33ff99d8-b1ad-4ed5-a4fd-376b97c2c841</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2e9ecbdb_002D9fc9_002D4e46_002Dbfac_002Dd057336b65c0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="IntegrationTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::EF72BF56-B509-4E95-9F0E-1684EAF1D81F::net6.0::IntegrationTests&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+  &lt;Project Location="E:\CustomProjects\WebDevelopment\oknorton-website\back-end\PortfolioAPI\PortfolioAPI.Tests" Presentation="&amp;lt;PortfolioAPI.Tests&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
 	

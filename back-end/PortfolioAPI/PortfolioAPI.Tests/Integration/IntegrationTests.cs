@@ -4,7 +4,9 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using PortfolioAPI.Models;
 using Xunit;
-using System.Text.Json;
+
+namespace PortfolioAPI.Tests.Integration;
+
 public class IntegrationTests : IDisposable
 {
     private readonly HttpClient _httpClient;
